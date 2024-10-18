@@ -1,0 +1,53 @@
+<<<<<<< HEAD
+node_modules
+.env
+coverage
+coverage.json
+typechain
+typechain-types
+
+# Hardhat files
+cache*
+artifacts*
+
+# Logs
+=======
+# Logs
+logs
+>>>>>>> 57453588245f415aa6866fc29a8d3b44251daed5
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+<<<<<<< HEAD
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Lock files (optional)
+# package-lock.json
+# yarn.lock
+=======
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# secrets
+.env
+>>>>>>> 57453588245f415aa6866fc29a8d3b44251daed5
