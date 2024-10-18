@@ -1,8 +1,11 @@
 {
-  "name": "client",
-  "private": true,
+  "name": "hardhat-javascript-starter",
   "version": "0.0.0",
+  "private": true,
   "scripts": {
+    "build": "npx thirdweb@latest detect",
+    "deploy": "npx thirdweb@latest deploy -k $SECRET_KEY",
+    "publish": "npx thirdweb@latest publish",
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
@@ -10,16 +13,22 @@
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0"
   },
   "dependencies": {
-    "@thirdweb-dev/react": "^4.9.4",
+    "@openzeppelin/contracts": "^5.0.2",
+    "@openzeppelin/contracts-upgradeable": "^5.0.2",
+    "@thirdweb-dev/contracts": "^3.8.0",
     "@thirdweb-dev/sdk": "^4.0.99",
+    "dotenv": "^16.4.5",
+    "thirdweb": "^5.61.6",
+    "zksync-web3": "^0.14.3",
     "ethers": "^5.7.2",
     "react": "^18.3",
     "react-dom": "^18.3",
     "react-router-dom": "^6.27.0",
-    "thirdweb": "^5",
     "uuid": "^10.0.0"
   },
   "devDependencies": {
+    "@matterlabs/hardhat-zksync-solc": "^0.3.17",
+    "hardhat": "^2.13.0",
     "@types/react": "^18.2.56",
     "@types/react-dom": "^18.2.19",
     "@typescript-eslint/eslint-plugin": "^7.0.2",
